@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+}
+.mainsection {
+    background-color: #BEE1F4;
+    width: 100%;
+}
+.filaInicio {
+    margin-right: 0;
+}
+.forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rowAboutMe {
+    margin-right: 0;
+    background-color: #d1cef7;
+}
+.aboutMeDiv {
+    margin-right: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme, .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    justify-content: center;
+}
+.guitar {
+    height: 200px;
+}
+.techImages {
+    justify-content: space-between
+}
+.rowFooter {
+    margin-right: 0;
+    background-color: #d1cef7;
+}
+.contact {
+    height: 100px;
+}
+.contactButton {
+    cursor: pointer;
+}
+
+/* --------------- FUENTES ---------------------------------- */
+@font-face {
+    font-family: Ageo;
+    src: url(./fonts/AgeoPersonalUse-Medium.otf);
+}
+@font-face {
+    font-family: AgeoBold;
+    src: url(./fonts/AgeoPersonalUse-SemiBold.otf);
+}
+.tituloInicio {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: "AgeoBold", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+.titleAboutMe {
+    font-family: "Courgette", cursive;
+    margin: 0;
+    padding: 5px 0px 5px 0px;
+    font-size: 40px;
+}
+h4 {
+    font-family: "Courgette", cursive;
+    margin: 0;
+    font-size: 30px;
+}
+p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+li {
+    font-family: "Ageo", Arial, Helvetica, sans-serif;
+    list-style:circle
+}
+.parrafo {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-family: "Ageo", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.aboutmeText {
+    font-family: "Itim", cursive;
+}
+.myName {
+    font-family: "Ageo", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.rowFooter {
+    font-family: "Ageo", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+/* ------------ ANIMACIONES -------------------- */
+@keyframes presentacion {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes presentacion2 {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes escalar {
+    0% {}
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+
+}
+.programador {
+    animation-name: presentacion;
+    animation-duration: 1.5s;
+}
+.tituloInicio, .parrafo {
+    animation-name: presentacion2;
+    animation-duration: 1.5s;
+}
+.classEscala {
+    animation-name: escalar;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
